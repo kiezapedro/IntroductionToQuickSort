@@ -41,17 +41,17 @@ public class Eater {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
 
         System.out.print("Enter the number of apples: ");
-        int N = sc.nextInt();
+        int N = scn.nextInt();
         Apple[] apples = new Apple[N];
 
         System.out.println("Enter the coordinates of each apple (x y):");
         for (int i = 0; i < N; i++) {
             System.out.print("Apple " + (i + 1) + ": ");
-            int x = sc.nextInt();
-            int y = sc.nextInt();
+            int x = scn.nextInt();
+            int y = scn.nextInt();
             apples[i] = new Apple(x, y, i);
         }
 
